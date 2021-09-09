@@ -6,7 +6,7 @@ const Header = ({ title }) => {
   return (
     <header className={headingStyle}>
       <div className="rounded-lg p-4 ring-1 ring-gray-900 ring-opacity-5 overflow-hidden bg-white">
-        <h1 style={{ display: "inline" }}>Task Tracker</h1>
+        <h1>Task Tracker</h1>
         <Button />
       </div>
     </header>

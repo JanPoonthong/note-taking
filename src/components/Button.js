@@ -2,11 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Button = ({ text, styling }) => {
-  return (
-    <button className={buttonStyle} style={{ verticalAlign: "middle" }}>
-      {text}
-    </button>
-  );
+  return <button className={buttonStyle}>{text}</button>;
 };
 
 const buttonStyle =

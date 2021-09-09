@@ -3,5 +3,12 @@
 @tailwind utilities;
 
 body {
+  max-width: 800px;
   background-color: #f9fafb;
+}
+
+.ring-opacity-5 {
+  display: flex;
+  justify-content: space-around;
+  margin: 8%;
 }

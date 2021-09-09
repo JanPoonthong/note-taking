@@ -1,16 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Button from "./Button";
+import Box from "./Box";
 
 const Header = ({ title }) => {
   return (
     <header className={headingStyle}>
-      <div className="rounded-lg p-4 ring-1 ring-gray-900 ring-opacity-5 overflow-hidden bg-white">
-        <h1>Task Tracker</h1>
-        <div>
-          <Button />
-        </div>
-      </div>
+      <Box title={title} />
     </header>
   );
 };

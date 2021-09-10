@@ -20,11 +20,9 @@ const task = [
 const Task = () => {
   return (
     <div>
-      <Box
-        title={task.map((task) => (
-          <h3>{task.text}</h3>
-        ))}
-      />
+      {task.map((task) => (
+        <Box title={task.text} />
+      ))}
     </div>
   );
 };

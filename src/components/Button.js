@@ -1,8 +1,12 @@
 import PropTypes from "prop-types";
 
-const Button = ({ text, styling }) => {
+const Button = ({ text, onClick }) => {
   return (
-    <button className={buttonStyle} style={{ verticalAlign: "middle" }}>
+    <button
+      onClick={onClick}
+      className={buttonStyle}
+      style={{ verticalAlign: "middle" }}
+    >
       {text}
     </button>
   );

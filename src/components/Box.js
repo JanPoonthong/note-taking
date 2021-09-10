@@ -3,11 +3,15 @@ import PropTypes from "prop-types";
 import Button from "./Button";
 
 const Box = ({ title }) => {
+  const addNote = () => {
+    alert("click");
+  };
+
   return (
     <div className={boxStyle}>
       <h1>{title}</h1>
       <div>
-        <Button />
+        <Button onClick={addNote} />
       </div>
     </div>
   );

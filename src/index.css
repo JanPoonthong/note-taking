@@ -12,3 +12,9 @@ body {
   margin: auto;
   width: 600px;
 }
+
+.task-note {
+  margin: auto;
+  width: 600px;
+  padding: 20px;
+}

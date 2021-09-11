@@ -5,7 +5,7 @@ import Box from "./Box";
 const Header = ({ title }) => {
   return (
     <header className={headingStyle}>
-      <Box title={title} />
+      <Box title={title} button={true} />
     </header>
   );
 };

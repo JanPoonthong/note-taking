@@ -1,6 +1,6 @@
 {
-  "homepage": "http://janpoonthong.github.io/my-app",
-  "name": "my-app",
+  "homepage": "http://janpoonthong.github.io/note-taking",
+  "name": "note-taking",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

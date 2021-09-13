@@ -33,7 +33,7 @@ const Box = ({ title, button }) => {
 };
 
 Box.defaultProps = {
-  title: "Task Tracker",
+  title: "Note Taking",
   button: false,
 };
 

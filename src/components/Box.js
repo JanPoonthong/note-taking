@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
-import { FaTimes } from "react-icons/fa";
+import Delete from "./Delete";
 
-const Box = ({ title, button }) => {
+const Box = ({ title, button, task, setTask }) => {
   const addNote = () => {
     alert("click");
   };
@@ -25,7 +25,7 @@ const Box = ({ title, button }) => {
     return (
       <div className={boxStyle}>
         <h2>
-          {title} <FaTimes />
+          {title} <Delete task={task} setTask={setTask} />
         </h2>
       </div>
     );

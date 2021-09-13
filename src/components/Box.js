@@ -9,7 +9,7 @@ const Box = ({ title, button }) => {
 
   if (button) {
     const boxStyle =
-      "rounded-lg p-4 ring-1 ring-gray-900 ring-opacity-5 overflow-hidden bg-white";
+      "rounded-lg p-4 ring-1 ring-gray-900 ring-opacity-5 title overflow-hidden bg-white";
     return (
       <div className={boxStyle}>
         <h1>{title}</h1>
@@ -20,7 +20,7 @@ const Box = ({ title, button }) => {
     );
   } else {
     const boxStyle =
-      "rounded-lg p-4 ring-1 ring-gray-900 ring-opacity-5 task-note overflow-hidden bg-white";
+      "rounded-lg p-4 ring-1 ring-gray-900 ring-opacity-5 notes overflow-hidden bg-white";
     return (
       <div className={boxStyle}>
         <h2>{title}</h2>

@@ -6,15 +6,13 @@ body {
   background-color: #f9fafb;
 }
 
-.ring-opacity-5 {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  width: 600px;
-}
-
-.task-note {
+.title, .notes {
   margin: auto;
   width: 600px;
   padding: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
 }

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Button from "./Button";
 import Delete from "./Delete";
 
-const Box = ({ title, button, task, setTask }) => {
+const Box = ({ title, button, task, setTasks }) => {
   const addNote = () => {
     alert("click");
   };
@@ -25,7 +25,7 @@ const Box = ({ title, button, task, setTask }) => {
     return (
       <div className={boxStyle}>
         <h2>
-          {title} <Delete task={task} setTask={setTask} />
+          {title} <Delete task={task} setTasks={setTasks} />
         </h2>
       </div>
     );

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
+import { FaTimes } from "react-icons/fa";
 
 const Box = ({ title, button }) => {
   const addNote = () => {
@@ -23,7 +24,9 @@ const Box = ({ title, button }) => {
       "rounded-lg p-4 ring-1 ring-gray-900 ring-opacity-5 notes overflow-hidden bg-white";
     return (
       <div className={boxStyle}>
-        <h2>{title}</h2>
+        <h2>
+          {title} <FaTimes />
+        </h2>
       </div>
     );
   }

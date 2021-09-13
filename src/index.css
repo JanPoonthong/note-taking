@@ -6,7 +6,8 @@ body {
   background-color: #f9fafb;
 }
 
-.title, .notes {
+.title,
+.notes {
   margin: auto;
   width: 600px;
   padding: 20px;
@@ -15,4 +16,14 @@ body {
 .title {
   display: flex;
   justify-content: space-between;
+}
+
+.notes {
+  margin-bottom: 12px;
+}
+
+svg {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 472px;
 }

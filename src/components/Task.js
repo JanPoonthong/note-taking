@@ -28,7 +28,7 @@ const Task = () => {
         // TODO(jan): Need to pass task and setTask as one function argument
         <Box
           key={task.id}
-          isDeleted={isDeleted}
+          isDeleted={task.isDeleted}
           title={task.text}
           task={task}
           setTasks={setTasks}

@@ -12,7 +12,7 @@ const Delete = ({ task, setTasks, isDeleted }) => {
 };
 
 const remove = (task, setTasks) => {
-  isDeleted = true;
+  task.isDeleted = true;
   setTasks((old_task) => {
     return old_task.filter((current_task) => task.id !== current_task.id);
   });

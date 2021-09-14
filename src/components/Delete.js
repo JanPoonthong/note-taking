@@ -11,10 +11,15 @@ const Delete = ({ task, setTasks, isDeleted }) => {
   );
 };
 
-const remove = (task, setTasks) => {
-  task.isDeleted = true;
+const remove = (task, setTasks, isDeleted) => {
   setTasks((old_task) => {
-    return old_task.filter((current_task) => task.id !== current_task.id);
+    return old_task.filter((current_task) => {
+      if (task.id !== current_task.id) {
+        return { current_task, isDeleted: true };
+      } else {
+        return;
+      }
+    });
   });
 };
 

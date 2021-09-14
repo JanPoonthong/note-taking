@@ -8,6 +8,12 @@ const Box = ({ title, button, task, setTasks, isDeleted }) => {
     alert("click");
   };
 
+  if (isDeleted === true) {
+    var deletedStyle = "delete";
+  } else {
+    var deletedStyle = "";
+  }
+
   if (button) {
     const boxStyle =
       "rounded-lg p-4 ring-1 ring-gray-900 ring-opacity-5 title overflow-hidden bg-white";
@@ -20,12 +26,11 @@ const Box = ({ title, button, task, setTasks, isDeleted }) => {
       </div>
     );
   } else {
-    const boxStyle =
-      "rounded-lg ring-1 ring-gray-900 ring-opacity-5 bg-white note delete";
+    const boxStyle = `rounded-lg ring-1 ring-gray-900 ring-opacity-5 bg-white note ${deletedStyle}`;
     return (
       <div className={boxStyle}>
         <h2>
-          {title}{" "}
+          {title}
           <Delete task={task} setTasks={setTasks} isDeleted={isDeleted} />
         </h2>
       </div>

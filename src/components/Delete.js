@@ -1,6 +1,6 @@
 import { FaTimes } from "react-icons/fa";
 
-const Delete = ({ task, setTasks }) => {
+const Delete = ({ task, setTasks, isDeleted }) => {
   return (
     <>
       <FaTimes
@@ -12,6 +12,7 @@ const Delete = ({ task, setTasks }) => {
 };
 
 const remove = (task, setTasks) => {
+  isDeleted = true;
   setTasks((old_task) => {
     return old_task.filter((current_task) => task.id !== current_task.id);
   });

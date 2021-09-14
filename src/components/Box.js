@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Button from "./Button";
 import Delete from "./Delete";
 
-const Box = ({ title, button, task, setTasks }) => {
+const Box = ({ title, button, task, setTasks, isDeleted }) => {
   const addNote = () => {
     alert("click");
   };
@@ -21,11 +21,12 @@ const Box = ({ title, button, task, setTasks }) => {
     );
   } else {
     const boxStyle =
-      "rounded-lg p-4 ring-1 ring-gray-900 ring-opacity-5 notes overflow-hidden bg-white";
+      "rounded-lg ring-1 ring-gray-900 ring-opacity-5 bg-white note delete";
     return (
       <div className={boxStyle}>
         <h2>
-          {title} <Delete task={task} setTasks={setTasks} />
+          {title}{" "}
+          <Delete task={task} setTasks={setTasks} isDeleted={isDeleted} />
         </h2>
       </div>
     );
@@ -39,6 +40,7 @@ Box.defaultProps = {
 
 Box.propTypes = {
   title: PropTypes.string.isRequired,
+  button: PropTypes.bool.isRequired,
 };
 
 export default Box;

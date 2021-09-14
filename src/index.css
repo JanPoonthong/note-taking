@@ -10,7 +10,6 @@ body {
 .notes {
   margin: auto;
   width: 600px;
-  padding: 20px;
 }
 
 .title {
@@ -18,7 +17,8 @@ body {
   justify-content: space-between;
 }
 
-.notes {
+.note {
+  padding: 20px;
   margin-bottom: 12px;
 }
 
@@ -27,4 +27,8 @@ svg {
   vertical-align: middle;
   margin-left: 472px;
   cursor: pointer;
+}
+
+.delete {
+  transition: height 1.5s;
 }

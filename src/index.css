@@ -29,6 +29,10 @@ svg {
   cursor: pointer;
 }
 
-.delete {
-  transition: height 1.5s;
+.Box {
+  transition: 1s;
+}
+
+.Box.delete {
+  opacity: 0;
 }

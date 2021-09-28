@@ -28,7 +28,7 @@ const Box = ({ title, button, task, setTasks, isDeleted }) => {
     }
 
     const boxStyle = `Box rounded-lg ring-1 ring-gray-900 ring-opacity-5 bg-white note ${deletedStyle}`;
-    if (isDeleted) {
+    if (!isDeleted) {
       return (
         <div className={boxStyle}>
           <h2>

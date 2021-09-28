@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Button from "./Button";
 import Delete from "./Delete";
 
-const Box = ({ title, button, task, setTasks, isDeleted }) => {
+const Box = ({ title, button, task, isDeleting, setTasks, isDeleted }) => {
   const addNote = () => {
     alert("click");
   };
@@ -27,12 +27,12 @@ const Box = ({ title, button, task, setTasks, isDeleted }) => {
       deletedStyle = "";
     }
 
+    // Animation
     const boxStyle = `Box rounded-lg ring-1 ring-gray-900 ring-opacity-5 bg-white note ${deletedStyle}`;
+    isDeleting = true;
 
-    for (let _ in task) {
-      if (isDeleted === true) {
-        console.log("Deleting");
-      }
+    if (isDeleting === true) {
+      console.log("Deleting");
     }
 
     if (!isDeleted) {

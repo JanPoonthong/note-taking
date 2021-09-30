@@ -13,13 +13,9 @@ const Delete = ({ task, setTasks }) => {
 
 const remove = (task, setTasks) => {
   setTasks((old_task) => {
-    return old_task.map((current_task) => {
-      if (task.id === current_task.id) {
-        return { ...current_task, isDeleted: true };
-      } else {
-        return current_task;
-      }
-    });
+    return old_task.map((t) =>
+      t.id === task.id ? { ...task, isDeleted: true } : t
+    );
   });
 };
 

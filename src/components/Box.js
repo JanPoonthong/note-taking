@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
 import Delete from "./Delete";
+import { Transition } from "@headlessui/react";
 
 const Box = ({ title, button, task, isDeleting, setTasks, isDeleted }) => {
   const addNote = () => {
@@ -29,17 +30,22 @@ const Box = ({ title, button, task, isDeleting, setTasks, isDeleted }) => {
 
     const boxStyle = `Box rounded-lg ring-1 ring-gray-900 ring-opacity-5 bg-white note ${deletedStyle}`;
 
-    if (!isDeleted) {
-      return (
+    return (
+      <Transition
+        show={!task.isDeleted}
+        enter="transition ease-in-out duration-300 transform"
+        leave="transition ease-in-out duration-300 transform"
+        leaveFrom="translate-y-0 opacity-100"
+        leaveTo="-translate-y-full opacity-0"
+      >
         <div className={boxStyle}>
           <h2>
-            {title}
+            {title}{" "}
             <Delete task={task} setTasks={setTasks} isDeleted={isDeleted} />
           </h2>
         </div>
-      );
-    }
-    return null;
+      </Transition>
+    );
   }
 };
 

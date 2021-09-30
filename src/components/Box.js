@@ -28,11 +28,6 @@ const Box = ({ title, button, task, isDeleting, setTasks, isDeleted }) => {
     }
 
     const boxStyle = `Box rounded-lg ring-1 ring-gray-900 ring-opacity-5 bg-white note ${deletedStyle}`;
-    isDeleting = true;
-
-    if (isDeleting === true) {
-      console.log("Deleting");
-    }
 
     if (!isDeleted) {
       return (

@@ -18,6 +18,6 @@ Header.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-const headingStyle = "text-center text-6xl font-bold my-6";
+const headingStyle = "text-center font-bold my-6";
 
 export default Header;

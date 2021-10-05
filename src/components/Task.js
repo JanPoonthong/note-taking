@@ -28,7 +28,6 @@ const Task = () => {
   return (
     <div className="notes">
       {tasks.map((task) => (
-        // TODO(jan): Need to pass task and setTask as one function argument
         <Box
           key={task.id}
           isDeleted={task.isDeleted}

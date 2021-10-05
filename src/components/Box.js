@@ -2,11 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
 import Delete from "./Delete";
+import AddTask from "./AddTask";
 import { Transition } from "@headlessui/react";
 
 const Box = ({ title, button, task, isDeleting, setTasks, isDeleted }) => {
   const addNote = () => {
-    alert("click");
+    alert("Click");
   };
 
   if (button) {
@@ -14,7 +15,7 @@ const Box = ({ title, button, task, isDeleting, setTasks, isDeleted }) => {
       "rounded-lg p-4 ring-1 ring-gray-900 ring-opacity-5 title overflow-hidden bg-white";
     return (
       <div className={boxStyle}>
-        <h1>{title}</h1>
+        <AddTask />
         <div>
           <Button onClick={addNote} />
         </div>

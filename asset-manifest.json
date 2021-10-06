@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/note-taking/static/css/main.ad4fa435.chunk.css",
-    "main.js": "/note-taking/static/js/main.5ec26891.chunk.js",
-    "main.js.map": "/note-taking/static/js/main.5ec26891.chunk.js.map",
+    "main.css": "/note-taking/static/css/main.f3450770.chunk.css",
+    "main.js": "/note-taking/static/js/main.43327b64.chunk.js",
+    "main.js.map": "/note-taking/static/js/main.43327b64.chunk.js.map",
     "runtime-main.js": "/note-taking/static/js/runtime-main.45d065af.js",
     "runtime-main.js.map": "/note-taking/static/js/runtime-main.45d065af.js.map",
     "static/js/2.f88235a3.chunk.js": "/note-taking/static/js/2.f88235a3.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.c102e362.chunk.js": "/note-taking/static/js/3.c102e362.chunk.js",
     "static/js/3.c102e362.chunk.js.map": "/note-taking/static/js/3.c102e362.chunk.js.map",
     "index.html": "/note-taking/index.html",
-    "static/css/main.ad4fa435.chunk.css.map": "/note-taking/static/css/main.ad4fa435.chunk.css.map",
+    "static/css/main.f3450770.chunk.css.map": "/note-taking/static/css/main.f3450770.chunk.css.map",
     "static/js/2.f88235a3.chunk.js.LICENSE.txt": "/note-taking/static/js/2.f88235a3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.45d065af.js",
     "static/js/2.f88235a3.chunk.js",
-    "static/css/main.ad4fa435.chunk.css",
-    "static/js/main.5ec26891.chunk.js"
+    "static/css/main.f3450770.chunk.css",
+    "static/js/main.43327b64.chunk.js"
   ]
 }

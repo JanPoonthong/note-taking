@@ -8,7 +8,7 @@ const Header = ({ tasks, setTasks }) => {
       <Box
         title={tasks.text}
         button={true}
-        tasks={tasks}
+        task={tasks}
         setTasks={setTasks}
         isDeleted={tasks.isDeleted}
       />

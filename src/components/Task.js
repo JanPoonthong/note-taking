@@ -1,6 +1,6 @@
 import Box from "./Box";
 
-const Task = (tasks, setTasks) => {
+const Task = ({tasks, setTasks}) => {
   return (
     <div className="notes">
       {tasks.map((task) => (

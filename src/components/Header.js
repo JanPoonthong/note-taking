@@ -2,16 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import Box from "./Box";
 
-const Header = ({ title }) => {
+const Header = ({ tasks, setTasks }) => {
   return (
     <header className={headingStyle}>
-      <Box title={title} button={true} />
+      <Box
+        title={tasks.text}
+        button={true}
+        tasks={tasks}
+        setTasks={setTasks}
+        isDeleted={tasks.isDeleted}
+      />
     </header>
   );
-};
-
-Header.defaultProps = {
-  title: "Note Taking",
 };
 
 Header.propTypes = {

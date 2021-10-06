@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 const AddTask = () => {
+  const [text, setText] = useState("");
   return (
     <form className="w-full">
       <div className="md:flex md:items-center">
@@ -8,6 +11,8 @@ const AddTask = () => {
             id="inline-full-name"
             type="text"
             placeholder="Add here"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
           ></input>
         </div>
       </div>

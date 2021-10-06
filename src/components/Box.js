@@ -5,7 +5,7 @@ import Delete from "./Delete";
 import AddTask from "./AddTask";
 import { Transition } from "@headlessui/react";
 
-const Box = ({ title, button, task, isDeleting, setTasks, isDeleted }) => {
+const Box = ({ title, button, task, setTasks, isDeleted }) => {
   const addNote = () => {
     alert("Click");
   };

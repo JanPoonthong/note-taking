@@ -7,9 +7,10 @@ import AddTask from "./AddTask";
 
 const Box = ({ title, button, task, setTasks, isDeleted }) => {
   const [text, setText] = useState("");
+  let [id, setId] = useState(0);
 
   const addNote = () => {
-    let update = { id: 4, text: text, isDeleted: false };
+    let update = { id: id, text: text, isDeleted: false };
     if (text === "") {
       alert("Please fill up");
       return null;

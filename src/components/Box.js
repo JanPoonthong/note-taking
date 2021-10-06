@@ -1,5 +1,3 @@
-import React from "react";
-import PropTypes from "prop-types";
 import Button from "./Button";
 import Delete from "./Delete";
 import AddTask from "./AddTask";
@@ -48,16 +46,6 @@ const Box = ({ title, button, task, setTasks, isDeleted }) => {
       </Transition>
     );
   }
-};
-
-Box.defaultProps = {
-  title: "Note Taking",
-  button: false,
-};
-
-Box.propTypes = {
-  title: PropTypes.string.isRequired,
-  button: PropTypes.bool.isRequired,
 };
 
 export default Box;

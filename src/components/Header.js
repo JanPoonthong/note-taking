@@ -1,5 +1,3 @@
-import React from "react";
-import PropTypes from "prop-types";
 import Box from "./Box";
 
 const Header = ({ tasks, setTasks }) => {
@@ -14,10 +12,6 @@ const Header = ({ tasks, setTasks }) => {
       />
     </header>
   );
-};
-
-Header.propTypes = {
-  title: PropTypes.string.isRequired,
 };
 
 const headingStyle = "text-center font-bold my-6";

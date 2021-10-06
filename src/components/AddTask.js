@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const AddTask = ({ text, setText }) => {
   return (
     <form className="w-full">

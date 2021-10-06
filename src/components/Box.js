@@ -5,7 +5,8 @@ import { Transition } from "@headlessui/react";
 
 const Box = ({ title, button, task, setTasks, isDeleted }) => {
   const addNote = () => {
-    alert("Click");
+    let update = { id: 4, text: "Add", isDeleted: false };
+    setTasks((old_task) => [...old_task, update]);
   };
 
   if (button) {

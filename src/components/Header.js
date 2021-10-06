@@ -3,13 +3,7 @@ import Box from "./Box";
 const Header = ({ tasks, setTasks }) => {
   return (
     <header className={headingStyle}>
-      <Box
-        title={tasks.text}
-        button={true}
-        task={tasks}
-        setTasks={setTasks}
-        isDeleted={tasks.isDeleted}
-      />
+      <Box button={true} task={tasks} setTasks={setTasks} />
     </header>
   );
 };

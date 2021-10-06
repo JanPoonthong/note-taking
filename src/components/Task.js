@@ -1,6 +1,7 @@
 import Box from "./Box";
 
 const Task = ({ tasks, setTasks }) => {
+  console.log(tasks);
   return (
     <div className="notes">
       {tasks.map((task) => (

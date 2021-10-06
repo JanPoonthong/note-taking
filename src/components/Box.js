@@ -1,11 +1,19 @@
+import { Transition } from "@headlessui/react";
+import { useState } from "react";
+
 import Button from "./Button";
 import Delete from "./Delete";
 import AddTask from "./AddTask";
-import { Transition } from "@headlessui/react";
 
 const Box = ({ title, button, task, setTasks, isDeleted }) => {
+  const [text, setText] = useState("");
+
   const addNote = () => {
-    let update = { id: 4, text: "Add", isDeleted: false };
+    let update = { id: 4, text: text, isDeleted: false };
+    if (text === "") {
+      alert("Please fill up");
+      return null;
+    }
     setTasks((old_task) => [...old_task, update]);
   };
 
@@ -14,7 +22,7 @@ const Box = ({ title, button, task, setTasks, isDeleted }) => {
       "rounded-lg p-4 ring-1 ring-gray-900 ring-opacity-5 title overflow-hidden bg-white";
     return (
       <div className={boxStyle}>
-        <AddTask />
+        <AddTask text={text} setText={setText} />
         <div>
           <Button onClick={addNote} />
         </div>

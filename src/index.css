@@ -23,9 +23,7 @@ body {
 }
 
 svg {
-  display: inline;
-  vertical-align: middle;
-  margin-left: 472px;
+  float: right;
   cursor: pointer;
 }
 

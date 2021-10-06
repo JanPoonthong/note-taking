@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-const AddTask = () => {
-  const [text, setText] = useState("");
+const AddTask = ({ text, setText }) => {
   return (
     <form className="w-full">
       <div className="md:flex md:items-center">

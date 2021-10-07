@@ -10,11 +10,6 @@ let id = 0;
 const Box = ({ title, button, task, setTasks, isDeleted }) => {
   const [text, setText] = useState("");
 
-  const initialState = {
-    text: "",
-    setText: "",
-  };
-
   const addNote = () => {
     id++;
     let update = { id: id, text: text, isDeleted: false };

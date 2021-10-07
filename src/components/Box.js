@@ -23,7 +23,7 @@ const Box = ({ title, button, task, setTasks, isDeleted }) => {
       return null;
     }
     setTasks((old_task) => [...old_task, update]);
-    setText({ ...initialState });
+    setText("");
   };
 
   if (button) {

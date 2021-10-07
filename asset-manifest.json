@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/note-taking/static/css/main.f3450770.chunk.css",
-    "main.js": "/note-taking/static/js/main.6cd71cbe.chunk.js",
-    "main.js.map": "/note-taking/static/js/main.6cd71cbe.chunk.js.map",
+    "main.js": "/note-taking/static/js/main.2382ec8f.chunk.js",
+    "main.js.map": "/note-taking/static/js/main.2382ec8f.chunk.js.map",
     "runtime-main.js": "/note-taking/static/js/runtime-main.45d065af.js",
     "runtime-main.js.map": "/note-taking/static/js/runtime-main.45d065af.js.map",
-    "static/js/2.649efe05.chunk.js": "/note-taking/static/js/2.649efe05.chunk.js",
-    "static/js/2.649efe05.chunk.js.map": "/note-taking/static/js/2.649efe05.chunk.js.map",
+    "static/js/2.f88235a3.chunk.js": "/note-taking/static/js/2.f88235a3.chunk.js",
+    "static/js/2.f88235a3.chunk.js.map": "/note-taking/static/js/2.f88235a3.chunk.js.map",
     "static/js/3.c102e362.chunk.js": "/note-taking/static/js/3.c102e362.chunk.js",
     "static/js/3.c102e362.chunk.js.map": "/note-taking/static/js/3.c102e362.chunk.js.map",
     "index.html": "/note-taking/index.html",
     "static/css/main.f3450770.chunk.css.map": "/note-taking/static/css/main.f3450770.chunk.css.map",
-    "static/js/2.649efe05.chunk.js.LICENSE.txt": "/note-taking/static/js/2.649efe05.chunk.js.LICENSE.txt"
+    "static/js/2.f88235a3.chunk.js.LICENSE.txt": "/note-taking/static/js/2.f88235a3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.45d065af.js",
-    "static/js/2.649efe05.chunk.js",
+    "static/js/2.f88235a3.chunk.js",
     "static/css/main.f3450770.chunk.css",
-    "static/js/main.6cd71cbe.chunk.js"
+    "static/js/main.2382ec8f.chunk.js"
   ]
 }

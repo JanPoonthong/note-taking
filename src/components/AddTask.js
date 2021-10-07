@@ -1,6 +1,6 @@
 const AddTask = ({ text, setText }) => {
   return (
-    <form className="w-full">
+    <div className="w-full">
       <div className="md:flex md:items-center">
         <div className="md:w-2/3">
           <input
@@ -13,7 +13,7 @@ const AddTask = ({ text, setText }) => {
           ></input>
         </div>
       </div>
-    </form>
+    </div>
   );
 };
 

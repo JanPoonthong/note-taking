@@ -4,8 +4,7 @@ import Header from "./components/Header";
 import Task from "./components/Task";
 
 const App = () => {
-  const [tasks, setTasks] = useState([
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   return (
     <>
